@@ -87,12 +87,12 @@ def fake_terminal_loop(commands, outputs):
 
 def print_initial_sequence():
     steps = [
-        ("[*] Boot sequence initialized...", 0.5),
-        ("[*] Establishing uplink...", 0.5),
-        ("[+] Network node handshake successful.", 0.5),
-        ("[*] Loading core modules...", 0.5),
-        ("[!] Charging the faith capacitors...", 1.0),
-        ("[*] Realigning subspace sarcasm modulators...", 0.7),
+        ("[*] Boot sequence initialized...", random.uniform(0.2, 1)),
+        ("[*] Establishing uplink...", random.uniform(0.2, 1)),
+        ("[+] Network node handshake successful.", random.uniform(0.2, 1)),
+        ("[*] Loading core modules...", random.uniform(0.2, 1)),
+        ("[!] Charging the faith capacitors...", random.uniform(1, 2)),
+        ("[*] Realigning subspace sarcasm modulators...", random.uniform(0.2, 1)),
         ("\n>>> All systems green. Ready for operation.\n", 1.0),
     ]
 
