@@ -28,3 +28,15 @@ or with an optional argument:
 
 ```python3 hack-a-ton.py --target=something.url```
 
+
+---
+
+Showcasing the usage of Python3: 
+
+- functions
+- working with files
+- lists
+- try/except
+- external modules: time, random, os, argparse
+
+
