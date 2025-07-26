@@ -37,7 +37,7 @@ The commands don’t do anything (sorry, no real hacking magic here).
 They’re just for show, inspired by real tools, games, and movies.
 
 ---
-
+The messages are generated randomly. Occasionally, some fun combinations appear.
 ![Screenshot](img/title.png)
 ![Screenshot](img/sample.png)
 
