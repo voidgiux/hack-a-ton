@@ -87,14 +87,13 @@ def fake_terminal_loop(commands, outputs):
 
 def print_initial_sequence():
     steps = [
-        ("[*] System initiated.", 0.5),
-        ("[+] Loading modules...", 0.5),
-        ("[!] Done!", 0.5),
-        ("[*] Loading dependencies...", 0.5),
-        ("[*] Done!", 0.5),
-        ("[!] Charging the faith capacitors...", 1.5),
-        ("[*] Done!", 0.5),
-        ("\nAll systems ready!\n", 1.0),
+        ("[*] Boot sequence initialized...", 0.5),
+        ("[*] Establishing uplink...", 0.5),
+        ("[+] Network node handshake successful.", 0.5),
+        ("[*] Loading core modules...", 0.5),
+        ("[!] Charging the faith capacitors...", 1.0),
+        ("[*] Realigning subspace sarcasm modulators...", 0.7),
+        ("\n>>> All systems green. Ready for operation.\n", 1.0),
     ]
 
     for message, delay in steps:
