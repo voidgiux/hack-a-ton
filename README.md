@@ -18,13 +18,11 @@ A fake terminal "hacking" simulation that fills your screen with random commands
 
 ```cd hack-a-ton```
 
-3a. Run: 
+3. Run: 
 
 ```python3 hack-a-ton.py```
 
-3b. or with an optional argument: 
-
-```python3 hack-a-ton.py --target=something.url```
+( or with an optional argument: ```python3 hack-a-ton.py --target=something.url```
 
 ---
 
