@@ -10,19 +10,19 @@ A fake terminal "hacking" simulation that fills your screen with random commands
 
 ##### Usage:
 
-Clone repo: 
+1. Clone repo: 
 
 ```git clone https://github.com/voidgiux/hack-a-ton```
 
-Enter the directory: 
+2. Enter the directory: 
 
 ```cd hack-a-ton```
 
-Run: 
+3a. Run: 
 
 ```python3 hack-a-ton.py```
 
-or with an optional argument: 
+3b. or with an optional argument: 
 
 ```python3 hack-a-ton.py --target=something.url```
 
