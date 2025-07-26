@@ -18,8 +18,10 @@ def load_lines_from_file(filename):
         lines = [line.strip() for line in f.readlines() if line.strip()]
     return lines
 
+
 def clear():
     os.system('cls' if os.name == 'nt' else 'clear')
+
 
 def process_command(cmd: str) -> str:
     if '{}' in cmd:
