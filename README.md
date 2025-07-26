@@ -14,6 +14,10 @@ Clone repo:
 
 ```git clone https://github.com/voidgiux/hack-a-ton```
 
+Enter the directory: 
+
+```cd hack-a-ton```
+
 Run: 
 
 ```python3 hack-a-ton.py```
