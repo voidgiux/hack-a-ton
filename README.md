@@ -32,4 +32,7 @@ Showcasing the usage of Python3:
 - try/except
 - external modules: time, random, os, argparse
 
+Note:
+The commands don’t do anything (sorry, no real hacking magic here).
+They’re just for show, inspired by real tools, games, and movies.
 
