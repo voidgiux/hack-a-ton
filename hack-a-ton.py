@@ -86,22 +86,20 @@ def fake_terminal_loop(commands, outputs):
 
 
 def print_initial_sequence():
-    print("[*] System initiated.")
-    time.sleep(0.5)
-    print("[+] Loading modules...")
-    time.sleep(0.5)
-    print("[!] Done!")
-    time.sleep(0.5)
-    print("[*] Loading dependencies...")
-    time.sleep(0.5)
-    print("[*] Done!")
-    time.sleep(0.5)
-    print("[!] Charging the faith capacitors...")
-    time.sleep(1.5)
-    print("[*] Done!")
-    time.sleep(0.5)
-    print("\nAll systems ready!\n")
-    time.sleep(1)
+    steps = [
+        ("[*] System initiated.", 0.5),
+        ("[+] Loading modules...", 0.5),
+        ("[!] Done!", 0.5),
+        ("[*] Loading dependencies...", 0.5),
+        ("[*] Done!", 0.5),
+        ("[!] Charging the faith capacitors...", 1.5),
+        ("[*] Done!", 0.5),
+        ("\nAll systems ready!\n", 1.0),
+    ]
+
+    for message, delay in steps:
+        print(message)
+        time.sleep(delay)
 
 
 def print_title():
