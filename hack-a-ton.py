@@ -1,5 +1,11 @@
 """
-test
+Github: ........ https://github.com/voidgiux/hack-a-ton
+Post: .......... https://linkedin.com/
+Title: ......... hack-a-ton
+Description: ... A fake terminal "hacking" simulation that fills your screen with random commands and nonsense.
+ ............... To use as an idle animation, to look busy, or just for fun.
+Author ......... voidgiux
+Date: .......... 26 Jul 2025
 """
 
 import time
