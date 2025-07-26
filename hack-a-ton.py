@@ -47,7 +47,8 @@ def random_line():
 
 
 def fake_terminal_loop(commands, outputs):
-    print("> > > Starting hacking procedure < < <\n")
+    print("> > > Starting hacking procedure < < <")
+    print("Stay a while and listen..\n")
     time.sleep(1)
 
     iteration = 0
