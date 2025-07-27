@@ -5,7 +5,7 @@ Use it as an idle animation, to look busy, or just for fun!
 
 ---
 
-### 📅 Hackathon  
+### 📅 Hackathon 2025
 A project for the [boot.dev 2025 Hackathon](https://blog.boot.dev/news/hackathon-2025/)
 
 ---
@@ -31,13 +31,12 @@ A project for the [boot.dev 2025 Hackathon](https://blog.boot.dev/news/hackathon
 
 ---
 
-⚠️ Note
+⚠️ Note:
 The commands displayed do not perform any real operations — no actual hacking magic here!
 They’re inspired by real tools, movies, and games, purely for entertainment.
 
 ---
-🎲 Randomized output
-
+🎲 Randomized output:
 The messages are generated randomly, sometimes producing fun combinations.
 
 ![Screenshot](img/title.png)
