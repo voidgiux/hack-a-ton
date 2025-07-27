@@ -1,16 +1,18 @@
-# \# hack-a-ton
+# 🚀 hack-a-ton
 
-A fake terminal "hacking" simulation that fills your screen with random commands and nonsense. To use as an idle animation, to look busy, or just for fun.
+A fake terminal "hacking" simulation that fills your screen with random commands and nonsense.  
+Use it as an idle animation, to look busy, or just for fun!
 
-##### 
+---
 
-###### A project for the boot.dev 2025 Hackaton ( https://blog.boot.dev/news/hackathon-2025/ )
+### 📅 Hackathon  
+A project for the [boot.dev 2025 Hackathon](https://blog.boot.dev/news/hackathon-2025/)
 
-##### 
+---
 
-##### Usage:
+### ⚙️ Usage
 
-1. Clone repo: ```git clone https://github.com/voidgiux/hack-a-ton```
+1. Clone the repository:  ```git clone https://github.com/voidgiux/hack-a-ton```
 
 2. Enter the directory: ```cd hack-a-ton```
 
@@ -19,20 +21,21 @@ A fake terminal "hacking" simulation that fills your screen with random commands
 
 ---
 
-Showcasing the usage of Python3: 
+🐍 Python 3 Features Demonstrated
+- Modular functions
+- File input/output
+- Code organization with external modules
+- Lists and randomization
+- Exception handling with try/except
+- Usage of standard libraries: time, random, os, argparse
 
-- functions
-- working with files
-- lists
-- try/except
-- external modules: time, random, os, argparse
-
-Note:
-The commands don’t do anything (sorry, no real hacking magic here).
-They’re just for show, inspired by real tools, games, and movies.
+⚠️ Note
+The commands displayed do not perform any real operations — no actual hacking magic here!
+They’re inspired by real tools, movies, and games, purely for entertainment.
 
 ---
-The messages are generated randomly. Occasionally, some fun combinations appear.
+🎲 Randomized output
+The messages are generated randomly, sometimes producing amusing or unexpected combinations.
 ![Screenshot](img/title.png)
 ![Screenshot](img/sample.png)
 
