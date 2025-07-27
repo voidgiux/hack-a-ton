@@ -1,0 +1,20 @@
+hashcat -m 0 -a 0 -o cracked.txt hashes.txt rockyou.txt
+Hashcat v6.2.5 starting...
+Started: Tue Jul 27 14:00:00 2025
+Speed.#1.........:  1000 H/s (10.0ms) @ Accel:32 Loops:1024 Thr:256 Vec:8
+Recovered........: 2/5 (40.00%) Digests
+Progress.........: 120000/500000 (24.00%)
+Rejected.........: 0/120000 (0.00%)
+Restore.Point....: 100000/500000 (20.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0
+
+Session.Name.....: hashcat_session
+Status...........: Running
+Guess.Base.......: File: rockyou.txt
+Guess.Queue......: 1/1 (100.00%)
+
+example1:password123
+example2:qwertyuiop
+example3:letmein
+
+Press 'q' to quit, 's' to suspend, 'r' to restore.

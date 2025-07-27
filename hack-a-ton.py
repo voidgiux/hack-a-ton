@@ -54,100 +54,30 @@ def random_line():
 
 
 def simulate_console_sequence():
-    sequence = [
-        "[*] Starting Metasploit Framework...",
-        "msf6 > use exploit/windows/smb/ms17_010_eternalblue",
-        "msf6 exploit(ms17_010_eternalblue) > set RHOST 192.168.56.10",
-        "RHOST => 192.168.56.10",
-        "msf6 exploit(ms17_010_eternalblue) > set LPORT 4444",
-        "LPORT => 4444",
-        "msf6 exploit(ms17_010_eternalblue) > run",
-        "[*] Exploit sent successfully!",
-        "[+] Meterpreter session 1 opened!",
-        "meterpreter > getuid",
-        "Server username: NT AUTHORITY\\SYSTEM",
-        "meterpreter > hashdump",
-        "[*] Dumping password hashes...",
-        "Administrator:500:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::",
-    ]
-
-    for line in sequence:
-        print(line)
-        time.sleep(random.uniform(0.3, 0.7))
-    print()
+    play_sequence_from_file("data/msf_sequence.txt")
 
 
 def simulate_hashcat_sequence():
-    sequence = [
-        "hashcat -m 0 -a 0 -o cracked.txt hashes.txt rockyou.txt",
-        "Hashcat v6.2.5 starting...",
-        "Started: Tue Jul 27 14:00:00 2025",
-        "Speed.#1.........:  1000 H/s (10.0ms) @ Accel:32 Loops:1024 Thr:256 Vec:8",
-        "Recovered........: 2/5 (40.00%) Digests",
-        "Progress.........: 120000/500000 (24.00%)",
-        "Rejected.........: 0/120000 (0.00%)",
-        "Restore.Point....: 100000/500000 (20.00%)",
-        "Restore.Sub.#1...: Salt:0 Amplifier:0",
-        "",
-        "Session.Name.....: hashcat_session",
-        "Status...........: Running",
-        "Guess.Base.......: File: rockyou.txt",
-        "Guess.Queue......: 1/1 (100.00%)",
-        "",
-        "example1:password123",
-        "example2:qwertyuiop",
-        "example3:letmein",
-        "",
-        "Press 'q' to quit, 's' to suspend, 'r' to restore.",
-    ]
-
-    for line in sequence:
-        print(line)
-        time.sleep(random.uniform(0.2, 0.6))
-    print()
+    play_sequence_from_file("data/hashcat_sequence.txt")
 
 
 def simulate_nmap_sequence():
-    sequence = [
-        "Starting Nmap 7.80 ( https://nmap.org ) at 2025-07-27 14:10 UTC",
-        "Nmap scan report for target.host (192.168.1.100)",
-        "Host is up (0.0012s latency).",
-        "Not shown: 997 filtered ports",
-        "PORT     STATE  SERVICE",
-        "22/tcp   open   ssh",
-        "80/tcp   open   http",
-        "443/tcp  open   https",
-        "8080/tcp closed http-proxy",
-        "",
-        "Nmap done: 1 IP address (1 host up) scanned in 6.45 seconds"
-    ]
-
-    for line in sequence:
-        print(line)
-        time.sleep(random.uniform(0.15, 0.5))
-    print()
+    play_sequence_from_file("data/nmap_sequence.txt")
 
 
 def simulate_hydra_sequence():
-    sequence = [
-        "Hydra v9.1 (c) 2025 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes.",
-        "Hydra (http://www.thc.org/thc-hydra) starting at 2025-07-27 14:15:00",
-        "[DATA] max 16 tasks per 1 server, overall 16 tasks, 1434437 login tries (l:1000/p:1434), ~89652 tries per task",
-        "[STATUS]  123.00 tries/min, 16 tasks, 0 done, 5 active",
-        "[22][ssh] host: 192.168.1.100   login: admin   password: 123456",
-        "[STATUS]  234.00 tries/min, 16 tasks, 1 done, 5 active",
-        "[22][ssh] host: 192.168.1.100   login: root    password: toor",
-        "[STATUS]  345.00 tries/min, 16 tasks, 2 done, 5 active",
-        "[22][ssh] host: 192.168.1.100   login: user    password: password123",
-        "[STATUS]  456.00 tries/min, 16 tasks, 3 done, 5 active",
-        "1 of 1 target successfully completed, 3 valid passwords found",
-        "Hydra finished"
-    ]
+    play_sequence_from_file("data/hydra_sequence.txt")
 
-    for line in sequence:
-        print(line)
-        time.sleep(random.uniform(0.15, 0.5))
-    print()
+
+def play_sequence_from_file(filepath):
+    try:
+        with open(filepath, "r", encoding="utf-8") as f:
+            lines = [line.strip() for line in f if line.strip()]
+        for line in lines:
+            print(line)
+            time.sleep(random.uniform(0.3, 0.7))
+    except FileNotFoundError:
+        print(f"[!] Sequence file {filepath} not found.")
 
 
 def fake_terminal_loop(commands, outputs):

@@ -1,0 +1,10 @@
+Starting Nmap 7.80 ( https://nmap.org ) at 2025-07-27 14:10 UTC
+Nmap scan report for target.host (192.168.1.100)
+Host is up (0.0012s latency).
+Not shown: 997 filtered ports
+PORT     STATE  SERVICE
+22/tcp   open   ssh
+80/tcp   open   http
+443/tcp  open   https
+8080/tcp closed http-proxy
+Nmap done: 1 IP address (1 host up) scanned in 6.45 seconds
