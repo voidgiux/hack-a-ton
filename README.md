@@ -49,4 +49,4 @@ The messages are generated randomly, sometimes producing fun combinations.
 ![No Real Hacking](https://img.shields.io/badge/warning-no_real_hacking-red)
 ![Idle Mode](https://img.shields.io/badge/use_case-idle_terminal-green)
 ![Hackerman Certified](https://img.shields.io/badge/hackerman-approved-9cf)
-![Mood](https://img.shields.io/badge/mood-chaotic_good-orange)
+![Mood](https://img.shields.io/badge/mood-chaotic_good-114532)
