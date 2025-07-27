@@ -29,13 +29,17 @@ A project for the [boot.dev 2025 Hackathon](https://blog.boot.dev/news/hackathon
 - Exception handling with try/except
 - Usage of standard libraries: time, random, os, argparse
 
+---
+
 ⚠️ Note
 The commands displayed do not perform any real operations — no actual hacking magic here!
 They’re inspired by real tools, movies, and games, purely for entertainment.
 
 ---
 🎲 Randomized output
-The messages are generated randomly, sometimes producing amusing or unexpected combinations.
+
+The messages are generated randomly, sometimes producing fun combinations.
+
 ![Screenshot](img/title.png)
 ![Screenshot](img/sample.png)
 
