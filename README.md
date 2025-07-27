@@ -45,7 +45,7 @@ The messages are generated randomly, sometimes producing fun combinations.
 ---
 
 ![Python3](https://img.shields.io/badge/language-python3-blue?logo=python&logoColor=white)
-![Required: irony](https://img.shields.io/badge/required-sarcasm-purple)
+![Required: irony](https://img.shields.io/badge/required-irony-purple)
 ![No Real Hacking](https://img.shields.io/badge/warning-no_real_hacking-red)
 ![Idle Mode](https://img.shields.io/badge/use_case:-idle_terminal-green)
 ![Hackerman Certified](https://img.shields.io/badge/hackerman-approved-9cf)
