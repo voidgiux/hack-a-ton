@@ -1,3 +1,4 @@
+![Screenshot](img/title.png)
 # 🚀 hack-a-ton
 
 A fake terminal "hacking" simulation that fills your screen with random commands and nonsense.  
@@ -38,8 +39,6 @@ They’re inspired by real tools, movies, and games, purely for entertainment.
 ---
 🎲 Randomized output:
 The messages are generated randomly, sometimes producing fun combinations.
-
-![Screenshot](img/title.png)
 ![Screenshot](img/sample.png)
 
 
